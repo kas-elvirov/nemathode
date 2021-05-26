@@ -40,7 +40,7 @@ class _Nemathode<_M extends IConfig['mathConstants'],
 	};
 
 	evaluatePlease = (expression: Expression<_M, _F, _FN, _O>) => {
-		console.info('🤗');
+		console.info('🤗'); // eslint-disable-line
 
 		return this.evaluate(expression);
 	};
@@ -70,7 +70,7 @@ export default function Nemathode<_M extends IConfig['mathConstants'],
 	_FN extends keyof _F,
 	_O extends IConfig['binaryOperators'],
 	_FS extends FunctionSignature>
-	(config?: Readonly<Partial<IConfig>>): _Nemathode<_M, _F, _FN, _O, _FS> {
+(config?: Readonly<Partial<IConfig>>): _Nemathode<_M, _F, _FN, _O, _FS> {
 	return new _Nemathode(
 		{
 			mathConstants: config?.mathConstants

@@ -3,7 +3,7 @@ export function getUnexpectedOperatorError(
 	position: number,
 ): SyntaxError {
 	return new SyntaxError(
-		`It\'s just unexpected operator ${operator} at position ${position}. '
+		`It's just unexpected operator ${operator} at position ${position}. '
 		+ 'Remove it from there`,
 	);
 }

@@ -22,7 +22,7 @@ import { next } from './helpers/next';
 export const evaluateAstWithInitialState = <
 	_O extends IConfig['binaryOperators'],
 	_FS extends FunctionSignature
->(ast: Ast<_O, _FS>, config: IConfig) => {
+>(ast: Ast<_O, _FS>, config: IConfig): number | boolean => {
 	return evaluateAst(
 		{ ...INITIAL_STATE } as IState<_O>,
 		ast,
@@ -36,7 +36,7 @@ export const evaluateAst = <
 		state: IState<_O>,
 		ast: Ast<_O, _FS>,
 		config: IConfig,
-): number | boolean => {
+	): number | boolean => {
 	while (false === (state.operandsProcessedAlready >= ast.length)) {
 		const currentToken = ast[state.operandsProcessedAlready];
 
