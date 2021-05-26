@@ -17,7 +17,7 @@ $ yarn add nemathode
 
 ## Fast introduction
 
-Read article if you have a few minutes [here](https://medium.com/p/7474359d8484)
+Read article if you have a few minutes [here](https://artem-vadimovich-solovev.medium.com/one-lib-to-rule-them-all-nemathode-js-7474359d8484)
 
 or
 

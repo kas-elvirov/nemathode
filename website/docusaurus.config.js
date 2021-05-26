@@ -68,7 +68,7 @@ module.exports = {
           items: [
             {
               label: 'Introduction (medium)',
-              to: 'https://medium.com/p/7474359d8484',
+              to: 'https://artem-vadimovich-solovev.medium.com/one-lib-to-rule-them-all-nemathode-js-7474359d8484',
             },
             {
               label: 'Nemathode syntax',
