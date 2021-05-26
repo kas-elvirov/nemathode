@@ -1,6 +1,6 @@
 {
   "name": "nemathode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -18,7 +18,7 @@
     "@docusaurus/preset-classic": "2.0.0-alpha.74",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
-    "nemathode": "git+https://artem-solovev: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@github.com/artem-solovev/nemathode.git#dev",
+    "nemathode": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

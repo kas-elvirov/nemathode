@@ -6416,9 +6416,10 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-"nemathode@git+https://artem-solovev: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@github.com/artem-solovev/nemathode.git#dev":
-  version "0.0.1"
-  resolved "git+https://artem-solovev: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@github.com/artem-solovev/nemathode.git#64fd741fd1f6cfacaab37b9fad3af436b95398f1"
+nemathode@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nemathode/-/nemathode-1.0.0.tgz#72b7d703fd4cdc541ab3a38d2242be526e373599"
+  integrity sha512-jFIqmqoOyWoZlEjf9GRR/ePeF/onmmq9Sff2KsL+wpvzbd02ajWTz3aCUFxwamSCM+q8ee7nAKLHrSJimCTJEQ==
   dependencies:
     "@babel/runtime" "^7.14.0"
 

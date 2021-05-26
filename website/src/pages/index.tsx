@@ -7,12 +7,22 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { translate } from '@docusaurus/Translate';
 
+import Nemathode from 'nemathode';
+
+import config from '../nemathode/pureJSConfig';
 import HomepageFeatures from "../components/HomepageFeatures";
 
 import styles from "./index.module.css";
 
+const nemathode = Nemathode({
+	...config,
+});
+
 function HomepageHeader() {
 	const { siteConfig } = useDocusaurusContext();
+
+	// just a test
+	console.log(nemathode.evaluate([1, '+', 1]));
 
 	return (
 		<header className={clsx("hero hero--primary", styles.heroBanner)}>
@@ -22,9 +32,9 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="https://artem-vadimovich-solovev.medium.com/one-lib-to-rule-them-all-nemathode-js-7474359d8484"
+						to="https://codepen.io/artem-solovev/pen/eYvEJqQ"
 					>
-						Introduction - 5min ⏱️
+						Playground
           			</Link>
 				</div>
 			</div>
