@@ -6416,10 +6416,10 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nemathode@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nemathode/-/nemathode-1.0.0.tgz#72b7d703fd4cdc541ab3a38d2242be526e373599"
-  integrity sha512-jFIqmqoOyWoZlEjf9GRR/ePeF/onmmq9Sff2KsL+wpvzbd02ajWTz3aCUFxwamSCM+q8ee7nAKLHrSJimCTJEQ==
+nemathode@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/nemathode/-/nemathode-1.0.1.tgz#336ab92bcf85652ff3396eebaa27b0d838cd2cd7"
+  integrity sha512-PAKTUC1qKBkH/mAv9E3xtGZqMx52CE8zOrIjh5jRRxcZXK5w63fFrgD4DMPuHbbNJdNC2bhra0kER0+onRBI5g==
   dependencies:
     "@babel/runtime" "^7.14.0"
 
