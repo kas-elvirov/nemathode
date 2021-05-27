@@ -19,7 +19,7 @@
     "refactoring"
   ],
   "publishConfig": {
-    "registry-github": "https://npm.pkg.github.com/@artem-solovev",
+    "registry-github": "https://npm.pkg.github.com/artem-solovev",
     "registry-npm": "https://registry.npmjs.org/"
   },
   "authors": [
