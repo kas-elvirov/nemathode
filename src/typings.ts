@@ -48,7 +48,7 @@ export type OddOperand<M extends IConfig['mathConstants'],
 	O extends IConfig['binaryOperators']> = number
 	| MathConstantName<M>
 	| Expression<M, F, FN, O>
-	| [FunctionName<F>, ...FunctionArguments<F[FN]['implementation']>];
+	| [FunctionName<F>, FunctionArguments<F[FN]['implementation']>];
 
 export type EvenOperand<O extends IConfig['binaryOperators']> = BinaryOperatorName<O>;
 
@@ -70,7 +70,7 @@ export enum OperandType {
 */
 // function expression (mimimal expression)
 export type FunctionExpression<F extends IConfig['functions'], FN extends keyof F> =
-	[FunctionName<F>, ...FunctionArguments<F[FN]['implementation']>];
+	[FunctionName<F>, FunctionArguments<F[FN]['implementation']>];
 
 type Expression0<F extends IConfig['functions'], FN extends keyof F> = [
 	FunctionExpression<F, FN>,

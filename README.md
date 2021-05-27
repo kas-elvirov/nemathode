@@ -19,11 +19,13 @@ const res2 = nemathode.evaluate([0, '+', 1, '*', [2, '/', 1, '-', 3]]); // -1
 ```
 
 
-![dependencies](https://img.shields.io/badge/dependencies-0-blue?style=flat-square)
-![bundle size](https://img.shields.io/badge/build--size-9kb-green?style=flat-square)
+![dependencies](https://img.shields.io/badge/dependencies-0-blue?style=flat-square&logo=npm)
+![bundle size](https://img.shields.io/badge/build--size-9kb-green?style=flat-square&logo=npm)
 ![npm](https://img.shields.io/npm/v/nemathode?style=flat-square&logo=npm)
+![npm](https://img.shields.io/npm/dy/nemathode?style=flat-square&logo=npm)
 <!-- ![npm](https://img.shields.io/npm/dm/nemathode?style=flat-square&logo=npm) -->
 <!-- ![npm bundle size](https://img.shields.io/bundlephobia/min/nemathode?style=flat-square) -->
+
 
 
 ---
