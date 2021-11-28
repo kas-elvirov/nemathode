@@ -6,10 +6,10 @@
   "homepage": "https://nemathode.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artem-solovev/nemathode.git"
+    "url": "git+https://github.com/kas-elvirov/nemathode.git"
   },
   "bugs": {
-    "url": "https://github.com/artem-solovev/nemathode/issues"
+    "url": "https://github.com/kas-elvirov/nemathode/issues"
   },
   "keywords": [
     "javascript",
@@ -19,11 +19,11 @@
     "refactoring"
   ],
   "publishConfig": {
-    "registry-github": "https://npm.pkg.github.com/artem-solovev",
+    "registry-github": "https://npm.pkg.github.com/kas-elvirov",
     "registry-npm": "https://registry.npmjs.org/"
   },
   "authors": [
-    "Artem Vadimovich Solovev <artem.solovev.lse@gmail.com> (https://github.com/artem-solovev)"
+    "Kas Elvirov <kas.elvirov@gmail.com> (https://github.com/kas-elvirov)"
   ],
   "main": "lib/nemathode.js",
   "unpkg": "dist/nemathode.js",

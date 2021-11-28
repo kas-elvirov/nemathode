@@ -211,4 +211,4 @@ nemathode.mathConstants.SOME_CONST;
 
 ## License
 
-MIT © [Artem Vadimovich Solovev](http://www.artemsolovev.com/)
+MIT © [Kas Elvirov](http://www.kas-elvirov.com/)

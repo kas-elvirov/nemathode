@@ -32,7 +32,7 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="https://codepen.io/artem-solovev/pen/eYvEJqQ"
+						to="https://codepen.io/kas-elvirov/pen/eYvEJqQ"
 					>
 						Playground
           			</Link>

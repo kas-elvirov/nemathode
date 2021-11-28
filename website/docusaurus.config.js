@@ -7,7 +7,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'artem-solovev', // Usually your GitHub org/user name.
+  organizationName: 'kas-elvirov', // Usually your GitHub org/user name.
   projectName: 'nemathode', // Usually your repo name.
   /* i18n: {
     defaultLocale: 'en',
@@ -54,7 +54,7 @@ module.exports = {
           position: 'right',
         }, */
         {
-          href: 'https://github.com/artem-solovev/nemathode',
+          href: 'https://github.com/kas-elvirov/nemathode',
           label: 'GitHub',
           position: 'right',
         },
@@ -68,7 +68,7 @@ module.exports = {
           items: [
             {
               label: 'Introduction (medium)',
-              to: 'https://artem-vadimovich-solovev.medium.com/one-lib-to-rule-them-all-nemathode-js-7474359d8484',
+              to: 'https://kas-elvirov.medium.com/one-lib-to-rule-them-all-nemathode-js-7474359d8484',
             },
             {
               label: 'Nemathode syntax',
@@ -85,7 +85,7 @@ module.exports = {
             },
             {
               label: 'Github',
-              href: 'https://github.com/artem-solovev/nemathode/discussions',
+              href: 'https://github.com/kas-elvirov/nemathode/discussions',
             },
           ],
         },
@@ -98,7 +98,7 @@ module.exports = {
             }, */
             {
               label: 'GitHub',
-              href: 'https://github.com/artem-solovev/nemathode',
+              href: 'https://github.com/kas-elvirov/nemathode',
             },
           ],
         },
