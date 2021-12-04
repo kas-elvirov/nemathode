@@ -15,7 +15,9 @@ export default function Layout(props) {
                 <meta property="og:type" content="article" />
                 <meta property="og:title" content={siteConfig.title} />
                 <meta property="og:description" content={siteConfig.tagline} />
-                <meta property="og:image" content={siteConfig.themeConfig.navbar.logo.src} />
+                <meta property="og:image" content={require('../../static/img/logo.png').default} />
+                <meta property="og:image:width" content={'2000px'} />
+                <meta property="og:image:height" content={'2000px'} />
             </Head>
             <OriginalLayout {...props} />
         </>
