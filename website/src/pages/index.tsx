@@ -1,7 +1,7 @@
 import React from "react";
 
 import clsx from "clsx";
-import Layout from "@theme/Layout";
+// import Layout from "@theme/Layout";
 
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -11,6 +11,8 @@ import Nemathode from 'nemathode';
 
 import config from '../nemathode/pureJSConfig';
 import HomepageFeatures from "../components/HomepageFeatures";
+
+import Layout from '../theme/Layout';
 
 import styles from "./index.module.css";
 
