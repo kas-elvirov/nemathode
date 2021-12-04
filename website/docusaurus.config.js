@@ -2,6 +2,9 @@
 module.exports = {
   title: 'Nemathode',
   tagline: 'Math libs manager with single syntax',
+  customFields: {
+    syntaxExample: '[a, \'+\', b, \'*\', [c, \'/\', d, \'-\', e]]',
+  },
   url: 'https://nemathode.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -25,6 +28,23 @@ module.exports = {
   }, */
   themeConfig: {
     hideableSidebar: true,
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+      switchConfig: {
+        darkIcon: '🌙',
+        darkIconStyle: {
+          marginLeft: '2px',
+        },
+        // Unicode icons such as '\u2600' will work
+        // Unicode with 5 chars require brackets: '\u{1F602}'
+        lightIcon: '\u{1F60A}',
+        lightIconStyle: {
+          marginLeft: '1px',
+        },
+      },
+    },
     gtag: {
       trackingID: 'G-KJ7JJ57CJD',
       // Optional fields.
@@ -54,10 +74,15 @@ module.exports = {
           position: 'right',
         }, */
         {
+          href: 'https://kas-elvirov.com/',
+          label: 'Kas Elvirov',
+          position: 'right',
+        },
+        /* {
           href: 'https://github.com/kas-elvirov/nemathode',
           label: 'GitHub',
           position: 'right',
-        },
+        }, */
       ],
     },
     footer: {
@@ -96,9 +121,17 @@ module.exports = {
               label: 'Blog',
               to: '/blog',
             }, */
-            {
+            /* {
               label: 'GitHub',
               href: 'https://github.com/kas-elvirov/nemathode',
+            }, */
+            {
+              label: 'Kas Elvirov',
+              href: 'https://kas-elvirov.com/',
+            },
+            {
+              label: 'npm',
+              href: 'https://www.npmjs.com/package/nemathode',
             },
           ],
         },
@@ -124,6 +157,8 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+          theme: require('prism-react-renderer/themes/github'),
+          darkTheme: require('prism-react-renderer/themes/dracula'),
         },
       },
     ],

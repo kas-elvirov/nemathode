@@ -29,16 +29,35 @@ function HomepageHeader() {
 			<div className="container">
 				<h1 className="hero__title">{siteConfig.title}</h1>
 				<p className="hero__subtitle">{siteConfig.tagline}</p>
-				<div className={styles.buttons}>
+				<p className="hero__syntax_example">
 					<Link
-						className="button button--secondary button--lg"
+						// className="button button--secondary button--lg"
 						to="https://codepen.io/kas-elvirov/pen/eYvEJqQ"
 					>
-						Playground
-          			</Link>
+						{siteConfig.customFields.syntaxExample}
+					</Link>
+				</p>
+
+				{/* <div className={styles.buttons}>
+					Playground
+				</div> */}
+
+				<div
+					className="hero__cat"
+					style={{
+						display: 'flex',
+						top: '50%',
+						left: 0,
+						paddingTop: '20px',
+					}}
+				>
+					<img
+						src={require('../../static/img/cat.png').default}
+						height={100}
+					/>
 				</div>
 			</div>
-		</header>
+		</header >
 	);
 }
 

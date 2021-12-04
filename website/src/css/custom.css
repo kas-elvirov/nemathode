@@ -6,6 +6,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* You can override the default Infima variables here. */
 :root {
@@ -36,7 +37,6 @@
   --ifm-color-primary-light: #34ffff;
   --ifm-color-primary-lighter: #42ffff;
   --ifm-color-primary-lightest: #6cffff;
-
 
   /* GREEN - dark */
   /* --ifm-color-primary: #00675b;
@@ -84,6 +84,21 @@
 */
 .hero__title {
   font-family: 'Goldman', cursive;
+  font-size: 2.5rem;
+}
+
+.hero__subtitle {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.hero__syntax_example {
+  font-family: 'Oswald';
+  font-weight: 500;
+
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 /*
@@ -100,7 +115,10 @@ html[data-theme='light'] .hero__title {
 
 html[data-theme='light'] .hero__subtitle {
   color: #191c24;
-  font-weight: 200;
+}
+
+html[data-theme='dark'] .hero__syntax_example {
+  color: #191c24;
 }
 
 /*
@@ -109,12 +127,17 @@ html[data-theme='light'] .hero__subtitle {
 html[data-theme='dark'] .hero {
   background-color: #282c34;
 }
+
 html[data-theme='dark'] .hero__title {
   color: var(--ifm-color-primary);
 }
+
 html[data-theme='dark'] .hero__subtitle {
   color: #fff;
-  font-weight: 200;
+}
+
+html[data-theme='dark'] .hero__syntax_example {
+  color: #fff;
 }
 
 /*
@@ -139,3 +162,21 @@ LEGACY
   padding: 0 var(--ifm-pre-padding);
 }
 */
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px var(--ifm-color-primary-dark), 0 0 8px var(--ifm-color-primary-dark), 0 0 10px var(--ifm-color-primary-dark), 0 0 12px var(--ifm-color-primary-dark), 0 0 14px var(--ifm-color-primary-darker);
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--ifm-color-primary), 0 0 40px var(--ifm-color-primary), 0 0 50px var(--ifm-color-primary), 0 0 60px var(--ifm-color-primary), 0 0 70px var(--ifm-color-primary), 0 0 80px var(--ifm-color-primary);
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--ifm-color-primary-dark), 0 0 40px var(--ifm-color-primary-dark), 0 0 50px var(--ifm-color-primary-dark), 0 0 60px var(--ifm-color-primary-dark), 0 0 70px var(--ifm-color-primary-darker);
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--ifm-color-primary), 0 0 40px var(--ifm-color-primary), 0 0 50px var(--ifm-color-primary), 0 0 60px var(--ifm-color-primary), 0 0 70px var(--ifm-color-primary), 0 0 80px var(--ifm-color-primary);
+  }
+}
