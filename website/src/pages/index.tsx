@@ -32,17 +32,22 @@ function HomepageHeader() {
 				<h1 className="hero__title">{siteConfig.title}</h1>
 				<p className="hero__subtitle">{siteConfig.tagline}</p>
 				<p className="hero__syntax_example">
+					{/* <Link
+						// className="button button--secondary button--lg"
+						to="https://codepen.io/kas-elvirov/pen/eYvEJqQ"
+					> */}
+						{siteConfig.customFields.syntaxExample}
+					{/* </Link> */}
+				</p>
+
+				<div className={styles.buttons}>
 					<Link
 						// className="button button--secondary button--lg"
 						to="https://codepen.io/kas-elvirov/pen/eYvEJqQ"
 					>
-						{siteConfig.customFields.syntaxExample}
+						Demo
 					</Link>
-				</p>
-
-				{/* <div className={styles.buttons}>
-					Playground
-				</div> */}
+				</div>
 
 				<div
 					className="hero__cat"

@@ -1,5 +1,11 @@
 # <a href='https://nemathode.org'><img src='./docs/images/logo with name (small - light).png' height='60' alt='Nemathode logo' aria-label='nemathode.org' /></a>
 
+Quick links
+- [Demo](https://codepen.io/kas-elvirov/pen/eYvEJqQ)
+- [Docs](https://nemathode.org/)
+
+---
+
 Nemathode is array based mathematical expression notation (further in the text: nematode/s, expression/s).
 
 ```js
