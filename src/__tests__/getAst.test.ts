@@ -180,6 +180,7 @@ describe('nemathode simple', () => {
 	each(data.simple).test(
 		'shouldnt pass %o and gives us %s',
 		(expression, ast) => {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			expect(getAst(expression, INITIAL_CONFIG)).toEqual(expect.arrayContaining(ast));
 		},
 	);
@@ -189,6 +190,7 @@ describe('nemathode multiLevel', () => {
 	each(data.multiLevel).test(
 		'shouldnt pass %o and gives us %s',
 		(expression, ast) => {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			expect(getAst(expression, INITIAL_CONFIG)).toEqual(expect.arrayContaining(ast));
 		},
 	);
@@ -198,6 +200,7 @@ describe('nemathode mathConstants', () => {
 	each(data.mathConstants).test(
 		'shouldnt pass %o and gives us %s',
 		(expression, ast) => {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			expect(getAst(expression, INITIAL_CONFIG)).toEqual(expect.arrayContaining(ast));
 		},
 	);
@@ -207,6 +210,7 @@ describe('nemathode functions', () => {
 	each(data.functions).test(
 		'shouldnt pass %o and gives us %s',
 		(expression, ast) => {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			expect(getAst(expression, INITIAL_CONFIG)).toEqual(expect.arrayContaining(ast));
 		},
 	);
@@ -217,8 +221,10 @@ describe('nemathode error', () => {
 		'shouldnt pass %o and gives us %s',
 		(expression, ast) => {
 			try {
+				// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 				getAst(expression, INITIAL_CONFIG);
 			} catch (error) {
+				// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 				expect(error).toBeInstanceOf(ast);
 			}
 		},

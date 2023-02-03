@@ -16,13 +16,7 @@ module.exports = {
 		"browser": true,
 		"node": true
 	},
-	"settings": {
-		"react": {
-			"version": "detect"
-		},
-	},
 	"extends": [
-		'plugin:react/recommended',
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:@typescript-eslint/recommended-requiring-type-checking"
@@ -44,40 +38,15 @@ module.exports = {
 			"exports": "always-multiline",
 			"functions": "always-multiline",
 		}],
-		"@typescript-eslint/explicit-module-boundary-types": ["error"],
 		"eol-last": ["error", "always"],
-		"indent": ["error", "tab", { "SwitchCase": 1 }],
 		"camelcase": 2,
-		"react/jsx-closing-bracket-location": 2,
-		"react/jsx-curly-spacing": [2, { "when": "never", "allowMultiline": false }],
-		"react/jsx-equals-spacing": [2, "never"],
-		"react/jsx-key": [2, { "checkFragmentShorthand": true }],
-		"react/jsx-no-bind": [2, {
-			"allowArrowFunctions": false,
-			"allowFunctions": false,
-			"allowBind": false,
-		}],
-		"react/no-string-refs": [2, { "noTemplateLiterals": true }],
-		"react/self-closing-comp": ["error", {
-			"component": true,
-			"html": true
-		}],
-		"react/jsx-wrap-multilines": ["error", {
-			"declaration": "parens-new-line",
-			"assignment": "parens-new-line",
-			"return": "parens",
-			"arrow": "parens-new-line",
-			"condition": "parens-new-line",
-			"logical": "parens-new-line",
-			"prop": "parens-new-line"
-		}],
 		"@typescript-eslint/adjacent-overload-signatures": "error",
-        /* "@typescript-eslint/array-type": [
-            "error",
-            {
-                "default": "array"
-            }
-        ], */
+		/* "@typescript-eslint/array-type": [
+				"error",
+				{
+						"default": "array"
+				}
+		], */
 		"@typescript-eslint/ban-types": [
 			"error",
 			{
@@ -111,19 +80,19 @@ module.exports = {
 				"accessibility": "explicit"
 			}
 		],
-        /* "@typescript-eslint/indent": [
-            "error",
-            "tab",
-            {
-                "ObjectExpression": "first",
-                "FunctionDeclaration": {
-                    "parameters": "first"
-                },
-                "FunctionExpression": {
-                    "parameters": "first"
-                }
-            }
-        ], */
+		/* "@typescript-eslint/indent": [
+				"error",
+				"tab",
+				{
+						"ObjectExpression": "first",
+						"FunctionDeclaration": {
+								"parameters": "first"
+						},
+						"FunctionExpression": {
+								"parameters": "first"
+						}
+				}
+		], */
 		"@typescript-eslint/member-delimiter-style": [
 			"error",
 			{

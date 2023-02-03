@@ -112,6 +112,7 @@ export default function getAst<_M extends IConfig['mathConstants'],
 		if (Array.isArray(expression[i])) {
 			const token: IToken<_O, _FS> = {
 				type: OperandType.Expression,
+				// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 				value: getAst(expression[i], config),
 			};
 
@@ -120,6 +121,7 @@ export default function getAst<_M extends IConfig['mathConstants'],
 			continue;
 		}
 
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 		throw getUnknownOperandType(expression[i], config);
 	}
 

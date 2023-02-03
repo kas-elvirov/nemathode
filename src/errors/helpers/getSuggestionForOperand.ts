@@ -1,3 +1,5 @@
+import isPositiveArray from 'is-positive-array';
+
 import { getDistance } from './getDistance';
 
 interface ISuggestion {
@@ -42,7 +44,7 @@ function _getSuggestionForOperand(
 ): ISuggestion[] {
 	const metacollection = possibleSuggestions
 		.map((collection) => getDistances(operand, collection))
-		.filter(collection => collection.length > 0);
+		.filter(collection => isPositiveArray(collection));
 
 	const flattenArr: ISuggestion[] = [];
 
